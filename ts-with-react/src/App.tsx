@@ -1,13 +1,14 @@
 import React from "react";
-import ReducerSample from "./ReducerSample";
-import MyForm from "./useRef";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
-const App: React.FC = () => {
-  // return <ReducerSample />
-  const onSubmit = (form: { name: string; description: string }) => {
-    console.log(form);
-  };
-  return <MyForm onSubmit={onSubmit} />;
+const App = () => {
+  return (
+    <>
+      <TodoForm />
+      <TodoList />
+    </>
+  );
 };
 
 export default App;
