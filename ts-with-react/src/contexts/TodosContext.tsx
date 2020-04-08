@@ -1,5 +1,5 @@
 // 상태전용 Context 작성
-import { createContext, Dispatch, useReducer, useContext } from "react";
+import React, { createContext, Dispatch, useReducer, useContext } from "react";
 
 // 나중에 다른 컴포넌트에서 타입을 불러와서 쓸 수 있도록 내보낼 예정
 export type Todo = {
