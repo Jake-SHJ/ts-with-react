@@ -1,15 +1,8 @@
 import React from "react";
-import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
-import { TodosContextProvider } from "./contexts/TodosContext";
+import CounterContainer from "./containers/CounterContainer";
 
 const App = () => {
-  return (
-    <TodosContextProvider>
-      <TodoForm />
-      <TodoList />
-    </TodosContextProvider>
-  );
+  return <CounterContainer />;
 };
 
 export default App;
